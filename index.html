@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="js/script.js" defer></script>
+  <title>Multi Question Survey Component</title>
+
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Montserrat:wght@500;700&family=Open+Sans:wght@400;700&family=Outfit:wght@400;700&family=Overpass:wght@400;700&family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <main class="max-width-container">
+    <div class="rating-box-wrapper start-page">
+      <div class="card">
+        <div>
+          <div class="star-icon">
+            <img class="star" src="img/icon-star.svg" alt="star">
+          </div>
+          <p class="survey-instructions">Thank you for taking a short survey to share your experience with us. </p>
+          <button onclick="display(event)" class="start-button">START</button>
+        </div>
+      </div>
+       <!-- Rating state start -->
+    </div>
+
+  <!-- Blank card for survey questions -->
+    <div class="rating-box-wrapper survey-card">
+      <div class="card">
+        <div>
+          <div class="star-icon">
+            <img class="star" src="img/icon-star.svg" alt="star">
+          </div>
+        
+          <p class="question-title"></p>
+          
+          <p id="survey-question"></p>
+          <p class="survey-instructions">One is the lowest score and five is highest score.</p>
+        </div>
+
+        <form>
+        <fieldset id="fieldset">
+          <label for="score-1"></label>
+          <input
+          id="score-1" 
+          type="button" 
+          name="selected-score"
+          value="1">
+
+          <label for="score-2"></label>
+          <input 
+          id="score-2"
+          type="button" 
+          name="selected-score"
+          value="2">
+
+          <label for="score-3"></label>
+          <input 
+          id="score-3"
+          type="button" 
+          name="selected-score"
+          value="3">
+
+          <label for="score-4"></label>
+          <input 
+          id="score-4"
+          type="button" 
+          name="selected-score"
+          value="4">
+
+          <label for="score-5"></label>
+          <input 
+          id="score-5"
+          type="button" 
+          name="selected-score"
+          value="5">
+        </fieldset>
+        
+        </form>
+        <!-- onclick="nextQuestion(event)" -->
+        <button  id="next-button">Next</button>
+      </div>
+      
+    </div>
+
+  <!-- Thank you state start -->
+  <div class="thank-you-box-wrapper end-page">
+    
+    <div>
+      <img class="thank-you-illustration" src="img/illustration-thank-you.svg" alt="thank-you-icon">
+    </div>
+
+    <div class="thank-you-message-container">
+      <!-- <p class="display-score">You selected <span class="js-score"></span> of 5</p> -->
+      <p class="thank-you">Thank you!</p>
+      <p class="thank-you-message">We appreciate you taking the time to complete our survey. If you ever need more support, 
+      don't hesitate to get in touch!</p>
+      <a href="#"><p>Return to website</p></a>
+    </div>
+  </div>
+   
+  </main>
+  <footer class="attribution">
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p> 
+    <p class="coded-by">Coded by <a href="https://www.frontendmentor.io/profile/Stacy-Riley">Stacy Riley</a>.</p>
+  </footer>
+</body>
+</html>

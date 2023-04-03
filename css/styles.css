@@ -1,0 +1,363 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Overpass', sans-serif;
+  height: 100%;
+  margin: 0;
+}
+
+.max-width-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  min-height: 100%;
+}
+
+/*********** Start Page & Survey Card **************************/
+
+.rating-box-wrapper {
+  background: linear-gradient(#232A34 0%, #181E27 100%);
+  width: 327px;
+  height: 360px;
+  border-radius: 15px;
+}
+
+.star-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #262E38;
+  border-radius: 50%;
+  margin: 0;
+  margin-left: 24px;
+  margin-top: 24px;
+}
+
+.star {
+  width: 13.96px;
+  height: 13.33px;
+  position: relative;
+  left: 13.33px;
+  top: 13.33px;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 30px;
+  margin: 16px 0 0 24px;
+}
+
+.intro-message {
+  color: #969FAD;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  margin: 0;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 10px;
+  margin-bottom: 24px;
+}
+
+#survey-question {
+  color: #969FAD;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  margin: 0;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 10px;
+  margin-bottom: 24px;
+}
+
+.survey-instructions {
+  color: #969FAD;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  margin: 0;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 10px;
+  margin-bottom: 24px;
+}
+fieldset {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  border: none;
+  padding: 0;
+  margin-left: 24px;
+  margin-right: 22px;
+  margin-bottom: 24px;
+}
+
+label {
+  display: none;
+}
+
+input {
+  background-color: #262E38;
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 50%;
+  color: #7C8798;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+input:hover {
+  background-color: #FC7614;
+  color: #ffffff;
+}
+
+input:focus {
+  background-color: #7C8798;
+  color: #ffffff;
+}
+
+.start-button {
+  border: none;
+  width: 279px;
+  height: 45px;
+  background-color: #FC7614;
+  color: #ffffff;
+  border-radius: 30px;
+  margin: 0;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+}
+
+.start-button:hover {
+  background-color: #ffffff;
+  color:#FC7614;
+}
+
+#next-button {
+  border: none;
+  width: 279px;
+  height: 45px;
+  background-color: #FC7614;
+  color: #ffffff;
+  border-radius: 30px;
+  margin: 0;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+}
+
+/* #next-button:hover {
+  background-color: #ffffff;
+  color:#FC7614;
+} */
+
+/***********************************************/
+/***********************************************/
+/* Change state section */
+.start-page {
+  /* display: none; */
+}
+
+.survey-card {
+  display: none;
+}
+
+.end-page {
+  display: none;
+}
+/***********************************************/
+/***********************************************/
+
+
+/*********** Thank You Page **************************/
+
+.thank-you-box-wrapper {
+  background: linear-gradient(#232A34 0%, #181E27 100%);
+  width: 327px;
+  height: 360px;
+  border-radius: 15px;
+}
+
+.thank-you-illustration {
+  width: 144px;
+  height: 96px;
+  margin-top: 34px;
+  margin-left: 92px;
+  margin-right: 91px;
+}
+
+.thank-you-message-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  text-align: center;
+}
+
+.display-score {
+  color: #FC7614;
+  background-color: #262E38;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+  border-radius: 15px;
+  padding: 5px 12px;
+  margin: 0;
+  margin-top: 29px;
+}
+
+.thank-you {
+  color: #FFFFFF;
+  font-size: 24px;
+  line-height: 30.38px;
+  font-weight: 700;
+  margin: 0;
+  margin-top: 24px;
+}
+
+.thank-you-message {
+  color: #969FAD;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  margin: 17px 24px 37px 24px;
+}
+
+/*****************Footer ****************************/
+.attribution {
+  text-align: center;
+}
+.attribution a {
+  color: #FC7614;
+}
+
+.attribution p {
+  margin-bottom: 0;
+}
+.coded-by {
+  margin-top: 0;
+}
+
+/****************************************************/
+/****************************************************/
+/* Desktop View */
+/****************************************************/
+/****************************************************/
+
+@media(min-width: 1200px){
+
+  /*********** Rating Page **************************/
+  .rating-box-wrapper {
+    border-radius: 30px;
+    width: 412px;
+    height: 416px;
+  }
+
+  .star-icon {
+    width: 48px;
+    height: 48px;
+    margin-left: 32px;
+    margin-top: 32px;
+  }
+
+  .star {
+    width: 16.75px;
+    height: 16px;
+    position: relative;
+    left: 16px;
+    top: 16px;
+  }
+
+  h1 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 35.45px;
+    margin: 30px 0 0 32px;
+  }
+
+  .intro-message {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    margin: 0;
+    margin-left: 32px;
+    margin-right: 40px;
+    margin-top: 7px;
+    margin-bottom: 24px;
+  }
+
+  fieldset {
+    margin-left: 32px;
+    margin-right: 39px;
+    margin-bottom: 32px;
+  }
+
+  .start-button {
+    width: 341px;
+    margin-left: 32px;
+    margin-right: 39px;
+    margin-bottom: 32px;
+  }
+
+  input {
+    width: 51px;
+    height: 51px;
+    font-size: 16px;
+  }
+
+  /*********** Thank You Page **************************/
+  .thank-you-box-wrapper {
+    border-radius: 30px;
+    width: 412px;
+    height: 416px;
+  }
+  
+  .thank-you-illustration {
+    width: 162px;
+    height: 108px;
+    margin-top: 45px;
+    margin-left: 121px;
+    margin-right: 129px;
+  }
+  
+  .display-score {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 500;
+    border-radius: 15px;
+    padding: 4px 19px 4px 20px;
+    margin: 0;
+    margin-top: 32px;
+  }
+  
+  .thank-you {
+    font-size: 28px;
+    line-height: 35.45px;
+    font-weight: 700;
+    margin-top: 32px;
+  }
+  
+  .thank-you-message {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    margin: 15px 40px 45px 32px;
+  }
+}
