@@ -49,29 +49,26 @@ body {
   top: 13.33px;
 }
 
-h1 {
-  color: #ffffff;
-  font-size: 24px;
-  font-weight: 800;
-  line-height: 30px;
-  margin: 16px 0 0 24px;
-}
-
 .intro-message {
   color: #969FAD;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 14px;
   line-height: 22px;
   margin: 0;
   margin-left: 24px;
   margin-right: 24px;
-  margin-top: 10px;
-  margin-bottom: 24px;
+  margin-top: 24px;
+  margin-bottom: 86px;
+  text-align: center;
+}
+
+.survey-question-wrapper {
+  height: 50px;
 }
 
 #survey-question {
   color: #969FAD;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 14px;
   line-height: 22px;
   margin: 0;
@@ -90,8 +87,9 @@ h1 {
   margin-left: 24px;
   margin-right: 24px;
   margin-top: 10px;
-  margin-bottom: 24px;
+  margin-bottom: 10px;
 }
+
 fieldset {
   display: flex;
   justify-content: space-between;
@@ -99,9 +97,10 @@ fieldset {
   flex-flow: row wrap;
   border: none;
   padding: 0;
+  margin-top: 18px;
   margin-left: 24px;
   margin-right: 22px;
-  margin-bottom: 24px;
+  margin-bottom: 34px;
 }
 
 label {
@@ -163,10 +162,10 @@ input:focus {
   text-transform: uppercase;
 }
 
-/* #next-button:hover {
+#next-button:hover {
   background-color: #ffffff;
   color:#FC7614;
-} */
+}
 
 /***********************************************/
 /***********************************************/
@@ -211,18 +210,6 @@ input:focus {
   text-align: center;
 }
 
-.display-score {
-  color: #FC7614;
-  background-color: #262E38;
-  font-size: 14px;
-  line-height: 22px;
-  font-weight: 500;
-  border-radius: 15px;
-  padding: 5px 12px;
-  margin: 0;
-  margin-top: 29px;
-}
-
 .thank-you {
   color: #FFFFFF;
   font-size: 24px;
@@ -240,10 +227,19 @@ input:focus {
   margin: 17px 24px 37px 24px;
 }
 
+.return-link {
+  text-decoration: none;
+  color: #969FAD;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
 /*****************Footer ****************************/
 .attribution {
   text-align: center;
 }
+
 .attribution a {
   color: #FC7614;
 }
@@ -285,21 +281,26 @@ input:focus {
     top: 16px;
   }
 
-  h1 {
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 35.45px;
-    margin: 30px 0 0 32px;
-  }
-
   .intro-message {
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
     margin: 0;
     margin-left: 32px;
     margin-right: 40px;
-    margin-top: 7px;
+    margin-top: 24px;
+    margin-bottom: 99px;
+  }
+
+  #survey-question {
+    color: #969FAD;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0;
+    margin-left: 32px;
+    margin-right: 40px;
+    margin-top: 24px;
     margin-bottom: 24px;
   }
 
@@ -311,6 +312,14 @@ input:focus {
 
   .start-button {
     width: 341px;
+    margin-left: 32px;
+    margin-right: 39px;
+    margin-bottom: 32px;
+  }
+
+  #next-button {
+    width: 341px;
+    margin: 0;
     margin-left: 32px;
     margin-right: 39px;
     margin-bottom: 32px;
@@ -337,16 +346,6 @@ input:focus {
     margin-right: 129px;
   }
   
-  .display-score {
-    font-size: 15px;
-    line-height: 24px;
-    font-weight: 500;
-    border-radius: 15px;
-    padding: 4px 19px 4px 20px;
-    margin: 0;
-    margin-top: 32px;
-  }
-  
   .thank-you {
     font-size: 28px;
     line-height: 35.45px;
@@ -355,7 +354,7 @@ input:focus {
   }
   
   .thank-you-message {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 24px;
     font-weight: 400;
     margin: 15px 40px 45px 32px;
